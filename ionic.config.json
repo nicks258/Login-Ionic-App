@@ -1,5 +1,7 @@
 {
   "name": "taskApplication",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

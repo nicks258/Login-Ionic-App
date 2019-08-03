@@ -1,0 +1,23 @@
+<ion-content padding>
+ <img src="../../assets/images/preferences-system-power.png" class="logo">
+ <p>Landing Screen</p>
+
+ <ion-list>
+
+  <ion-item>
+    <ion-input [(ngModel)]="firstName" type="text" placeholder="First Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input [(ngModel)]="lastName" type="text" placeholder="Last Name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input [(ngModel)]="phoneNumber" type="number" placeholder="Mobile Number"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+ <button ion-button block (click)="doLogin()">Open Next Screen</button>
+
+</ion-content>
