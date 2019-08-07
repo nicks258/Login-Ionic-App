@@ -1,5 +1,5 @@
 export var global = {
-  baseURL : "http://ec90865d.ngrok.io/",
+  baseURL : "http://192.168.1.13/",
   getBaseUrl : function () {
     return this.baseURL;
   },

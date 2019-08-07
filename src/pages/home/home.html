@@ -6,7 +6,7 @@
       </ion-item>
       <ion-item>
         <ion-select [(ngModel)]="gaming">
-          <ion-option value="Category 1">Category 1</ion-option>
+          <ion-option selected value="Category 1">Category 1</ion-option>
           <ion-option value="Category 2">Category 2</ion-option>
           <ion-option value="Category 3">Category 3</ion-option>
         </ion-select>
@@ -17,38 +17,38 @@
 
 <ion-content padding>
   <div class="item_container">
-    <img src="../../assets/images/images.png">
+    <img src="assets/images/images.png">
     <p>Water</p>
     <p style="margin: 10px"><span>1lt | $2</span></p>
     <div class="button_box">
-      <span>-</span>
-      <span>2</span>
-      <span>+</span>
+      <span (click)="minusWater()">-</span>
+      <span>{{water}}</span>
+      <span (click)="addWater()">+</span>
     </div>
   </div>
 
   <div class="item_container">
-    <img src="../../assets/images/earth-icon-vector.png">
+    <img src="assets/images/earth-icon-vector.png">
     <p>Earth</p>
     <p style="margin: 10px"><span>1pc | $120</span></p>
     <div class="button_box">
-      <span>-</span>
-      <span>2</span>
-      <span>+</span>
+      <span (click)="minusEarth()">-</span>
+      <span>{{earth}}</span>
+      <span (click)="addEarth()">+</span>
     </div>
   </div>
 
   <div class="item_container">
-    <img src="../../assets/images/creativboard-converted-01-.jpg" style="width: 44%;">
+    <img src="assets/images/creativboard-converted-01-.jpg" style="width: 44%;">
     <p>Fire</p>
     <p style="margin: 10px"><span>1bl | Rs.20</span></p>
     <div class="button_box">
-      <span>-</span>
-      <span>2</span>
-      <span>+</span>
+      <span (click)="minusFire()">-</span>
+      <span>{{fire}}</span>
+      <span (click)="addFire()">+</span>
     </div>
   </div>
 
-  <button ion-button block (click)="showPrompt()">Back to Login</button>
+  <button ion-button block (click)="backToLogin()">Back to Login</button>
 
 </ion-content>

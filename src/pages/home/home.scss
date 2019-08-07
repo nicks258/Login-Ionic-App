@@ -11,8 +11,8 @@ page-home {
         border-bottom-right-radius: 8px;
         .toolbar-background{
             background: #0465b2!important;
-            border: none!important;        
-        } 
+            border: none!important;
+        }
         .item-cover{
             padding: 0;
         }
@@ -111,6 +111,45 @@ page-home {
         background-color: #0465b2;
         font-size: 1.8rem;
         margin-top: 10px;
-        height: 42px;    
+        height: 42px;
     }
+  .select-icon {
+    position: relative;
+    width: 12px;
+    height: 18px;
+    margin-left: 10px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  .select-text {
+    overflow: visible;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 16px;
+    font-size: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .alert-button {
+    margin: 2px !important;
+    padding: 8px 54px !important;
+    border-radius: 14px !important;
+    font-family: Nexa light !important;
+    font-size: 16px;
+    color: #fff !important;
+    font-weight: 600 !important;
+    background: #0465b2 !important;
+    text-transform: capitalize !important;
+  }
+  .alert-md .alert-button-group {
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: inherit;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
 }
